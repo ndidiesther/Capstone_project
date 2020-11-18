@@ -60,6 +60,86 @@
 .banner-down > div {
     margin-bottom: 30px;
 }
+.brown_brim {
+    background-image:  url("https://i.ibb.co/ZYW3VTp/brown-brim.png");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.blue_beanie {
+    background-image: url("https://i.ibb.co/ypkgK0X/blue-beanie.png");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.brown_cowboy {
+    background-image:  url("https://i.ibb.co/QdJwgmp/brown-cowboy.png");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.grey_brim {
+    background-image: url("https://i.ibb.co/RjBLWxB/grey-brim.png");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.adidas {
+    background-image: url("https://i.ibb.co/0s3pdnc/adidas-nmd.png");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.yeezy {
+    background-image:url("https://i.ibb.co/dJbG1cT/yeezy.png");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.black_converse {
+    background-image:url("https://i.ibb.co/bPmVXyP/black-converse.png");;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.nike {
+    background-image:url("https://i.ibb.co/1RcFPk0/white-nike-high-tops.png");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.shop_button {
+    width: 80%;
+    opacity: 0.8;
+    position: absolute;
+    color:black;
+    padding:10px;
+    left:22px;
+    top: 230px;
+    border:1px solid black;
+    /* display: none; */
+}
+.price {
+    position: absolute;
+    top:300px;
+}
+.price > div:first-child {
+    width: 90%;
+}
+.price > div:nth-child(2) {
+  width: 10%;
+  float: right;
+
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -103,8 +183,10 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .col-md-1 {width: 8.33%;}
-    .col-lg-1a {width: 5%;}
+    .col-md-1a {width: 5%;}
+    .col-md-2b {width: 3.33%;}
    .col-md-2 {width: 16.66%;}
+   .col-md-2a {width: 21%;}
    .col-md-3 {width: 25%;}
    .col-md-3a {width: 28%;}
    .col-md-4 {width: 33.33%;}
@@ -121,7 +203,9 @@
 @media only screen and (min-width: 1200px) {
    .col-lg-1 {width: 8.33%;}
    .col-lg-1a {width: 5%;}
+   .col-lg-2b {width: 3.33%;}
    .col-lg-2 {width: 16.66%;}
+   .col-lg-2a {width: 21%;}
    .col-lg-3 {width: 25%;}
    .col-lg-3a {width: 28%;}
    .col-lg-4 {width: 33.33%;}
