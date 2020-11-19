@@ -8,6 +8,7 @@
 .nav {
     padding-left: 6%;
     padding-top: 2%;
+    padding-right: 6%;
 }
 .banner-sec {
     padding-top: 40px;
@@ -61,21 +62,27 @@
     margin-bottom: 30px;
 }
 .brown_brim {
-    background-image:  url("https://i.ibb.co/ZYW3VTp/brown-brim.png");
+    background-image: url("https://i.ibb.co/ZYW3VTp/brown-brim.png");
+    /* background:  url('brown-brim.png'); */
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
+.banner-down > div:hover,.banner-sec > div:hover {
+    opacity: 0.8;
+}
 .blue_beanie {
     background-image: url("https://i.ibb.co/ypkgK0X/blue-beanie.png");
+    /* background-image: url("blue-beanie.png"); */
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .brown_cowboy {
-    background-image:  url("https://i.ibb.co/QdJwgmp/brown-cowboy.png");
+    background-image: url("https://i.ibb.co/QdJwgmp/brown-cowboy.png");
+    /* background-image:  url("brown-cowboy.png"); */
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,6 +91,7 @@
 }
 .grey_brim {
     background-image: url("https://i.ibb.co/RjBLWxB/grey-brim.png");
+    /* background-image: url("grey-brim.png"); */
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,27 +99,31 @@
 }
 .adidas {
     background-image: url("https://i.ibb.co/0s3pdnc/adidas-nmd.png");
+    /* background-image: url("adidas-nmd.png"); */
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .yeezy {
-    background-image:url("https://i.ibb.co/dJbG1cT/yeezy.png");
+    background-image: url("https://i.ibb.co/dJbG1cT/yeezy.png");
+    /* background-image:url("yeezy.png"); */
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .black_converse {
-    background-image:url("https://i.ibb.co/bPmVXyP/black-converse.png");;
+    background-image: url("https://i.ibb.co/bPmVXyP/black-converse.png");
+    /* background-image:url("black-converse.png"); */
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .nike {
-    background-image:url("https://i.ibb.co/1RcFPk0/white-nike-high-tops.png");
+    background-image: url("https://i.ibb.co/1RcFPk0/white-nike-high-tops.png");
+    /* background-image:url("white-nike-high-tops.png"); */
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,27 +131,153 @@
 }
 .shop_button {
     width: 80%;
-    opacity: 0.8;
+    opacity: 1.0;
     position: absolute;
     color:black;
-    padding:10px;
+    padding:15px;
     left:22px;
-    top: 230px;
+    top: 220px;
     border:1px solid black;
-    /* display: none; */
+    display: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.shop_button:hover {
+    color:white;
+    background-color: black;
+    opacity: 1.0;
 }
 .price {
-    position: absolute;
-    top:300px;
+    padding-top: 310px;
+    font-size: 18px;
 }
-.price > div:first-child {
-    width: 90%;
+.price > span:first-child {
+    float: left;
 }
-.price > div:nth-child(2) {
-  width: 10%;
+.price > span:nth-child(2) {
   float: right;
-
 }
+.black_shearling {
+    background-image:url("https://i.ibb.co/XzcwL5s/black-shearling.png");
+    /* background-image: url('black-shearling.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.blue_jean_jacket {
+    background-image:url("https://i.ibb.co/mJS6vz0/blue-jean-jacket.png");
+    /* background-image: url('blue-jean-jacket.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.grey_jean_jacket {
+    background-image:url("https://i.ibb.co/N71k1ML/grey-jean-jacket.png");
+    /* background-image: url('grey-jean-jacket.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.brown_shearling{
+    background-image:url("https://i.ibb.co/s96FpdP/brown-shearling.png");
+    /* background-image: url('brown-shearling.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.blue_tank{
+    background-image: url("https://i.ibb.co/7CQVJNm/blue-tank.png");
+    /* background-image: url('blue-tank.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.floral_blouse{
+    background-image: url("https://i.ibb.co/4W2DGKm/floral-blouse.png");
+    /* background-image: url('floral-blouse.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.floral_skirt{
+    background-image: url("https://i.ibb.co/KV18Ysr/floral-skirt.png");
+    /* background-image: url('floral-skirt.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.red_polka_dot_dress{
+    background-image: url("https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png");
+    /* background-image: url('red-polka-dot-dress.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.camo_vest{
+    background-image: url("https://i.ibb.co/xJS0T3Y/camo-vest.png");
+    /* background-image: url('camo-vest.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.floral_shirt{
+    background-image: url("https://i.ibb.co/qMQ75QZ/floral-shirt.png");
+    /* background-image: url('floral-shirt.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.long_sleeve{
+    background-image: url("https://i.ibb.co/55z32tw/long-sleeve.png");
+    /* background-image: url('long-sleeve.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.pink_shirt{
+    background-image: url("https://i.ibb.co/RvwnBL8/pink-shirt.png");
+    /* background-image: url('pink-shirt.png'); */
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.footer_div {
+    margin-bottom: 50px;
+}
+.cart-icon .shopping-icon {
+    width: 24px;
+    height: 24px;
+}
+.cart-icon {
+    width: 45px;
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    float: right;
+}
+.cart-icon .item-count {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 700;
+    bottom: 12px;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}

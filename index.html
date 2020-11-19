@@ -22,6 +22,18 @@
                 <circle id="Oval" fill="#5E6363" cx="25" cy="2" r="2"></circle>
                 <circle id="Oval" fill="#5E6363" cx="48" cy="9" r="2"></circle></g></g></g>
             </svg>
+            <div class="cart-icon">
+                <svg id="Capa_1" x="0px" y="0px" viewBox="0 0 407.453 407.453" xml:space="preserve" class="shopping-icon"><g>
+                    <path d="M255.099,116.515c4.487,0,8.129-3.633,8.129-8.129c0-4.495-3.642-8.129-8.129-8.129H143.486 c-4.487,0-8.129,3.633-8.129,8.129c0,4.495,3.642,8.129,8.129,8.129H255.099z" style="fill: rgb(1, 0, 2);"></path>
+                    <path d="M367.062,100.258H311.69c-4.487,0-8.129,3.633-8.129,8.129c0,4.495,3.642,8.129,8.129,8.129h47.243 v274.681H48.519V116.515h44.536c4.487,0,8.129-3.633,8.129-8.129c0-4.495-3.642-8.129-8.129-8.129H40.391 c-4.487,0-8.129,3.633-8.129,8.129v290.938c0,4.495,3.642,8.129,8.129,8.129h326.671c4.487,0,8.129-3.633,8.129-8.129V108.386 C375.191,103.891,371.557,100.258,367.062,100.258z" style="fill: rgb(1, 0, 2);"></path>
+                    <path d="M282.59,134.796c4.487,0,8.129-3.633,8.129-8.129V67.394C290.718,30.238,250.604,0,201.101,0 c-49.308,0-89.414,30.238-89.414,67.394v59.274c0,4.495,3.642,8.129,8.129,8.129s8.129-3.633,8.129-8.129V67.394 c0-28.198,32.823-51.137,73.36-51.137c40.334,0,73.157,22.939,73.157,51.137v59.274 C274.461,131.163,278.095,134.796,282.59,134.796z" style="fill: rgb(1, 0, 2);"></path>
+                    <path d="M98.892,147.566c0,11.526,9.389,20.907,20.923,20.907c11.534,0,20.923-9.38,20.923-20.907 c0-4.495-3.642-8.129-8.129-8.129s-8.129,3.633-8.129,8.129c0,2.561-2.089,4.65-4.666,4.65c-2.569,0-4.666-2.089-4.666-4.65 c0-4.495-3.642-8.129-8.129-8.129S98.892,143.071,98.892,147.566z" style="fill: rgb(1, 0, 2);"></path>
+                    <path d="M282.59,168.473c11.534,0,20.923-9.38,20.923-20.907c0-4.495-3.642-8.129-8.129-8.129 c-4.487,0-8.129,3.633-8.129,8.129c0,2.561-2.089,4.65-4.666,4.65c-2.577,0-4.666-2.089-4.666-4.65 c0-4.495-3.642-8.129-8.129-8.129c-4.487,0-8.129,3.633-8.129,8.129C261.667,159.092,271.055,168.473,282.59,168.473z" style="fill: rgb(1, 0, 2);"></path>
+                    </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+                </svg>
+                <span class="item-count" id="inc"> 0 </span>
+            </div>
+           
     
         </div>
         <div>
@@ -29,9 +41,9 @@
         </div>
         <div class="col-12 banner-sec">
             <h2>HATS</h2>
-            <div class="brown_brim  col-lg-2a col-md-2a col-sm-12 col-xs-12">
+            <div class="brown_brim  col-lg-2a col-md-2a col-sm-12 col-xs-12" onmouseover="showAddToCart(0)" onmouseout="removeAddToCart(0)">
                 <div class="div_button">
-                    <button class="shop_button">Add to Cart</button>
+                    <button class="shop_button cart" onclick="addItems()">ADD TO CART</button>
                 </div>
                 <div class="price">
                     <span>Brown Brim</span>
@@ -41,54 +53,219 @@
             <div class="empty_div col-lg-2b col-md-2b">
 
             </div>
-            <div class="blue_beanie col-lg-2a col-md-2a col-sm-12 col-xs-12">
+            <div class="blue_beanie col-lg-2a col-md-2a col-sm-12 col-xs-12" onmouseover="showAddToCart(1)" onmouseout="removeAddToCart(1)">
                 <div class="div_button">
-                    <button class="shop_button">Add to Cart</button>
+                    <button class="shop_button cart1" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Blue Beanie</span>
+                    <span>#18</span>
                 </div>
             </div>
             <div class="empty_div col-lg-2b col-md-2b"></div>
-            <div class="brown_cowboy col-lg-2a col-md-2a col-sm-12 col-xs-12">
+            <div class="brown_cowboy col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(2)" onmouseout="removeAddToCart(2)">
                 <div class="div_button">
-                    <button class="shop_button">Add to Cart</button>
+                    <button class="shop_button cart2"onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Brown Cowboy</span>
+                    <span>#35</span>
                 </div>
             </div>
             <div class="empty_div col-lg-2b col-md-2b"></div>
-            <div class="grey_brim col-lg-2a col-md-2a col-sm-12 col-xs-12">
-                <div class="div_button">
-                    <button class="shop_button">Add to Cart</button>
+            <div class="grey_brim col-lg-2a col-md-2a col-sm-12 col-xs-12" onmouseover="showAddToCart(3)" onmouseout="removeAddToCart(3)">
+                <div class="div_button ">
+                    <button class="shop_button cart3" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Grey Brim</span>
+                    <span>#25</span>
                 </div>
             </div>
         </div>
         <div class="col-12 banner-down"> 
             <h2>SNEAKERS</h2>
-            <div class="adidas col-lg-2a col-md-2a col-sm-12 col-xs-12">
+            <div class="adidas col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(4)" onmouseout="removeAddToCart(4)">
                 <div class="div_button">
-                    <button class="shop_button">Add to Cart</button>
+                    <button class="shop_button cart4"onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Adidas NMD</span>
+                    <span>#220</span>
                 </div>
             </div>
             <div class="empty_div col-lg-2b col-md-2b">
 
             </div>
-            <div class="yeezy col-lg-2a col-md-2a col-sm-12 col-xs-12">
+            <div class="yeezy col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(5)" onmouseout="removeAddToCart(5)">
                 <div class="div_button">
-                    <button class="shop_button">Add to Cart</button>
+                    <button class="shop_button cart5"onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Adidas Yeezy</span>
+                    <span>#280</span>
                 </div>
             </div>
             <div class="empty_div col-lg-2b col-md-2b"></div>
-            <div class="black_converse col-lg-2a col-md-2a col-sm-12 col-xs-12">
+            <div class="black_converse col-lg-2a col-md-2a col-sm-12 col-xs-12" onmouseover="showAddToCart(6)" onmouseout="removeAddToCart(6)">
                 <div class="div_button">
-                    <button class="shop_button">Add to Cart</button>
+                    <button class="shop_button cart6"onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Black Converse</span>
+                    <span>#110</span>
                 </div>
             </div>
             <div class="empty_div col-lg-2b col-md-2b"></div>
-            <div class="nike col-lg-2a col-md-2a col-sm-12 col-xs-12">
+            <div class="nike col-lg-2a col-md-2a col-sm-12 col-xs-12" onmouseover="showAddToCart(7)" onmouseout="removeAddToCart(7)">
                 <div class="div_button">
-                    <button class="shop_button">Add to Cart</button>
+                    <button class="shop_button cart7"onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Nike White AirForce</span>
+                    <span>#160</span>
                 </div>
             </div>
 
         </div>
+        <div class="col-12 banner-down"> 
+            <h2>JACKETS</h2>
+            <div class="black_shearling col-lg-2a col-md-2a col-sm-12 col-xs-12" onmouseover="showAddToCart(8)" onmouseout="removeAddToCart(8)">
+                <div class="div_button">
+                    <button class="shop_button cart8" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Black Shearling</span>
+                    <span>#125</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b">
+
+            </div>
+            <div class="blue_jean_jacket  col-lg-2a col-md-2a col-sm-12 col-xs-12" onmouseover="showAddToCart(9)" onmouseout="removeAddToCart(9)">
+                <div class="div_button">
+                    <button class="shop_button cart9" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Blue Jean Jacket</span>
+                    <span>#90</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b"></div>
+            <div class="grey_jean_jacket col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(10)" onmouseout="removeAddToCart(10)">
+                <div class="div_button">
+                    <button class="shop_button cart10" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Grey Jean jacket</span>
+                    <span>#90</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b"></div>
+            <div class="brown_shearling col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(11)" onmouseout="removeAddToCart(11)">
+                <div class="div_button">
+                    <button class="shop_button cart11" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Brown Shearling</span>
+                    <span>#165</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 banner-down"> 
+            <h2>WOMEN</h2>
+            <div class="blue_tank col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(12)" onmouseout="removeAddToCart(12)">
+                <div class="div_button">
+                    <button class="shop_button cart12" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Blue Tanktop</span>
+                    <span>#25</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b">
+
+            </div>
+            <div class="floral_blouse  col-lg-2a col-md-2a col-sm-12 col-xs-12" onmouseover="showAddToCart(13)" onmouseout="removeAddToCart(13)">
+                <div class="div_button">
+                    <button class="shop_button cart13" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Floral Blouse</span>
+                    <span>#20</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b"></div>
+            <div class="floral_skirt col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(14)" onmouseout="removeAddToCart(14)">
+                <div class="div_button">
+                    <button class="shop_button cart14" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Floral Skirt</span>
+                    <span>#80</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b"></div>
+            <div class="red_polka_dot_dress col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(15)" onmouseout="removeAddToCart(15)">
+                <div class="div_button">
+                    <button class="shop_button cart15" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Red Dots Dress </span>
+                    <span>#80</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 banner-down footer_div"> 
+            <h2>MEN</h2>
+            <div class="camo_vest col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(16)" onmouseout="removeAddToCart(16)">
+                <div class="div_button">
+                    <button class="shop_button cart16"onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Camo Down Vest</span>
+                    <span>#325</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b">
+
+            </div>
+            <div class="floral_shirt  col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(17)" onmouseout="removeAddToCart(17)">
+                <div class="div_button">
+                    <button class="shop_button cart17"onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Floral T-Shirt</span>
+                    <span>#20</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b"></div>
+            <div class="long_sleeve col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(18)" onmouseout="removeAddToCart(18)">
+                <div class="div_button">
+                    <button class="shop_button cart18" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Black and White Longsleeve</span>
+                    <span>#25</span>
+                </div>
+            </div>
+            <div class="empty_div col-lg-2b col-md-2b"></div>
+            <div class="pink_shirt col-lg-2a col-md-2a col-sm-12 col-xs-12"onmouseover="showAddToCart(19)" onmouseout="removeAddToCart(19)">
+                <div class="div_button">
+                    <button class="shop_button cart19" onclick="addItems()">ADD TO CART</button>
+                </div>
+                <div class="price">
+                    <span>Pink Shirt </span>
+                    <span>#25</span>
+                </div>
+            </div>
+
+        </div>
+       
     
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
