@@ -57,8 +57,12 @@
 }
 .banner-down{
     padding-left: 6%;
+    margin-top:50px
 }
 .banner-down > div {
+    margin-bottom: 50px;
+}
+.banner-sec > div:nth-child(2) {
     margin-bottom: 30px;
 }
 .brown_brim {
@@ -140,8 +144,9 @@
     border:1px solid black;
     display: none;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
+    font-family: Open Sans Condensed,sans-serif;
 }
 .shop_button:hover {
     color:white;
@@ -255,7 +260,7 @@
     position: relative;
 }
 .footer_div {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .cart-icon .shopping-icon {
     width: 24px;
@@ -277,6 +282,157 @@
     font-weight: 700;
     bottom: 12px;
 }
+.cart-dropdown {
+    position: absolute;
+    width: 240px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+    top: 80px;
+    right: 0;
+    z-index: 5;
+    display: none;
+}
+.cart-dropdown .cart-items {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    margin-bottom: 10px;
+}
+.cart-dropdown .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
+}
+#cart-items .empty-message {
+    display: none;
+}
+.cart-dropdown button {
+    margin-top: auto;
+}
+.custom-button {
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    letter-spacing: .5px;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Open Sans Condensed;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.cart-item {
+    width: 100%;
+    display: flex;
+    height: 80px;
+    margin-bottom: 15px;
+}
+.cart-item img {
+    width: 30%;
+}
+.cart-item .item-details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 20px;
+}
+.cart-item .item-details .name {
+    font-size: 16px;
+}
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a9a9a9;
+}
+.flex_container1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a9a9a9;
+    align-items: center;
+}
+.flex_container > div {
+    padding: 20px;
+}
+.flex_container > div:first-child{
+    padding-left: 0px;
+}
+.flex_container > div:last-child {
+    padding-right: 0px;
+}
+.fluid_container {
+  margin: auto;
+  width: 50%
+}
+.image > img {
+    width: 80px;
+    height: 80px;
+    margin: 3px 0;
+}
+.custom-button a {
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .brown_brim , .brown_cowboy, .blue_beanie, .grey_brim {
+        background-size: 60% 100%;
+    }
+    .adidas, .yeezy , .black_converse,.nike {
+        background-size: 60% 100%;
+    }
+    .black_shearling,.yeezy, .blue_jean_jacket, .grey_jean_jacket, .brown_shearling {
+        background-size: 60% 100%;
+    }
+    .brown_cowboy, .grey_brim , .black_converse, .nike,.grey_jean_jacket, .brown_shearling{
+        margin-top: 50px;
+    }
+    .blue_tank, .floral_blouse,  .floral_skirt, .red_polka_dot_dress {
+        background-size: 60% 100%;
+    }
+    .floral_skirt, .red_polka_dot_dress, .long_sleeve,.pink_shirt{
+        margin-top: 50px;
+    }
+    .camo_vest, .floral_shirt,.long_sleeve,.pink_shirt {
+        background-size: 60% 100%;
+    }
+    .shop_button {
+        width: 40%;
+        left:45px;
+    }
+    .price > span:nth-child(2) {
+        float:none;
+        padding-left:30%;
+    }
+}
+@media only screen and (max-width: 767px) {
+
+    .brown_cowboy,.blue_beanie, .grey_brim , .black_converse, .nike,.grey_jean_jacket,.floral_shirt, .brown_shearling{
+        margin-top: 50px;
+    }
+  
+    .floral_skirt,.yeezy,.blue_jean_jacket,.floral_blouse, .red_polka_dot_dress, .long_sleeve,.pink_shirt{
+        margin-top: 50px;
+    }
+   
+    .banner-sec, .banner-down {
+        padding-left: 20%;
+    }
+  
+}
+
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -361,4 +517,12 @@
 body{
     padding: 0px !important;
     margin:0px !important;
+    font-family: Open Sans Condensed,sans-serif;
 }
+@media only screen and (max-width: 400px){
+    .banner-sec, .banner-down {
+        padding-left: 10%;
+    }
+    
+    .col-xss-12 {width: 90%;}
+    }
