@@ -303,7 +303,7 @@
     overflow: scroll;
     margin-bottom: 10px;
 }
-.cart-dropdown .empty-message {
+.cart-dropdown .empty_message {
     font-size: 18px;
     margin: 50px auto;
 }

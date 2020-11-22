@@ -144,9 +144,6 @@ function showDrop(){
     }
     
     var cmp= document.getElementById("inc");
-        // function IncItems(){
-        //     cmp.innerHTML = parseInt(cmp.innerHTML) +1;
-        // }
         
 
 const data = [{
@@ -368,7 +365,14 @@ const displayitems = document.getElementById("cart-items")
 
 let cartItemsData = []
 
+    if (cartItemsData.length != 0){
+        document.querySelector(".empty_message").style.display="none"
+        console.log("your cart is empty")
+    }
+
+
 const addItems = (itemId) => {
+    
     cmp.innerHTML = parseInt(cmp.innerHTML) +1;
     for (i = 0; i < data.length; i++) {
         if (data[i].id == itemId) {
@@ -449,6 +453,7 @@ const addItems = (itemId) => {
         const add_cartItem = document.createElement("div");
         add_cartItem.innerHTML = ` <div class="cart-item">
         <img src=${cart_data.basketImg} alt="item">
+       
         <div class="item-details">
             <span class="name">${cart_data.name}</span>
             <span class="item_price">${cart_data.quantity} &#10005; #${cart_data.price} </span>
