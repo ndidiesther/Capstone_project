@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="col-12 banner">
         <div class="col-12 nav">
             <svg width="50px" height="39px" viewBox="0 0 50 39" class="logo">
                 <title>Group</title>
@@ -21,7 +22,7 @@
                 <circle id="Oval" fill="#5E6363" cx="25" cy="2" r="2"></circle>
                 <circle id="Oval" fill="#5E6363" cx="48" cy="9" r="2"></circle></g></g></g>
             </svg>
-            <div class="cart-icon" onclick="showDrop()">
+            <div class="cart-icon" id="cart-icon">
                 <svg id="Capa_1" x="0px" y="0px" viewBox="0 0 407.453 407.453" xml:space="preserve" class="shopping-icon"><g>
                     <path d="M255.099,116.515c4.487,0,8.129-3.633,8.129-8.129c0-4.495-3.642-8.129-8.129-8.129H143.486 c-4.487,0-8.129,3.633-8.129,8.129c0,4.495,3.642,8.129,8.129,8.129H255.099z" style="fill: rgb(1, 0, 2);"></path>
                     <path d="M367.062,100.258H311.69c-4.487,0-8.129,3.633-8.129,8.129c0,4.495,3.642,8.129,8.129,8.129h47.243 v274.681H48.519V116.515h44.536c4.487,0,8.129-3.633,8.129-8.129c0-4.495-3.642-8.129-8.129-8.129H40.391 c-4.487,0-8.129,3.633-8.129,8.129v290.938c0,4.495,3.642,8.129,8.129,8.129h326.671c4.487,0,8.129-3.633,8.129-8.129V108.386 C375.191,103.891,371.557,100.258,367.062,100.258z" style="fill: rgb(1, 0, 2);"></path>
@@ -30,25 +31,30 @@
                     <path d="M282.59,168.473c11.534,0,20.923-9.38,20.923-20.907c0-4.495-3.642-8.129-8.129-8.129 c-4.487,0-8.129,3.633-8.129,8.129c0,2.561-2.089,4.65-4.666,4.65c-2.577,0-4.666-2.089-4.666-4.65 c0-4.495-3.642-8.129-8.129-8.129c-4.487,0-8.129,3.633-8.129,8.129C261.667,159.092,271.055,168.473,282.59,168.473z" style="fill: rgb(1, 0, 2);"></path>
                     </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
                 </svg>
-                <span class="item-count" id="inc">  </span>
+                <span class="item-count" id="inc"> 0 </span>
             </div>
             <div class="cart-dropdown" >
                 <div class="cart-items" id="cart-items">
+                    <span  class="empty_message">Your Cart is Empty</span>
                     
                 </div>
-                <button class="custom-button">GO TO CHECKOUT</button>
+                <button class="custom-button"><a href="cart.html">GO TO CHECKOUT</a></button>
             </div>
            
     
         </div>
+        
         <div class="col-12">
-            <div class="fluid_container" id="idiot">
-                <div class="flex_container">
+            <div class="fluid_container">
+                <div class="flex_container" >
                   <div>Product</div>
                   <div>Description</div>
                   <div>Quantity</div>
                   <div>Price</div>
                   <div>Remove</div>
+                </div>
+                <div id="fluid-container">
+
                 </div>
                 <!-- <div class="flex_container1">
                     <div class="image"><img src="https://i.ibb.co/7CQVJNm/blue-tank.png" alt=""></div> 
@@ -59,8 +65,12 @@
                 </div> -->
             </div> 
         </div>
+        <!-- <div class="col-12 text" id="text" >
+             
+        </div> -->
         
     </div>
-    <!-- <script src="script.js"></script> -->
+
+    <script src="./script.js" type="module"></script>
 </body>
 </html>
