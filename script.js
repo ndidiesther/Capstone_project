@@ -14,6 +14,15 @@ if (cartItemsData.length != 0){
     console.log("your cart is empty")
 }
 
+const addItemsFromLS = (data) => {
+
+    cartItemsData.push(data)
+    console.log(cartItemsData)
+    cmp.innerHTML = parseInt(cmp.innerHTML) + data.quantity
+    renderUI()
+
+}
+
 
 const addItems = (itemId) => {
     
@@ -28,8 +37,7 @@ const addItems = (itemId) => {
             if (filter == -1) {
                 cartItemsData.push(data[i])
             }else {
-                data[i].quantity++
-    
+                data[i].quantity++    
             }
         }
     }
@@ -59,6 +67,7 @@ const addItems = (itemId) => {
                 cartItemsData.push(data_min[i])
             }else {
                 data_min[i].quantity++
+                
             }
         }
     }
@@ -92,6 +101,10 @@ const addItems = (itemId) => {
     }
     
    
+    renderUI()
+}
+
+function renderUI () {
     let htmlCartData = []
    
     cartItemsData.map((cart_data) => {
@@ -117,10 +130,11 @@ const addItems = (itemId) => {
 
     collectItemsData() 
 }
+
 let checkoutCartData = []
 const collectItemsData = () => {
-
-       cartItemsData.map((cart_data) => {
+        console.log("Hi", cartItemsData)
+       const checkoutCartData = cartItemsData.map((cart_data) => {
         const add_cartItem1= document.createElement("div");
         add_cartItem1.innerHTML = `<div class="flex_container1">
         <div class="image"><img src=${cart_data.basketImg} alt=""></div> 
@@ -129,27 +143,26 @@ const collectItemsData = () => {
         <div>${cart_data.price}</div>
         <div>&#10005;</div>
         </div>`
-
-        checkoutCartData.push(add_cartItem1)
+        return add_cartItem1
     })
     if(showitems){
         showitems.innerHTML = ''
+        checkoutCartData.forEach(html => {
+            showitems.append(html)
+        })
     }
     
-    checkoutCartData.forEach(html => {
-        if(showitems){
-            showitems.append(html)
-        }
-    })
+    
 }
 
 if(collectItems){
     collectItems.addEventListener('click', e => {
         console.log(e.target)
+        console.log("Hi before storage", cartItemsData)
         localStorage.setItem('cart', JSON.stringify(cartItemsData))
         window.location.href = 'cart.html'
         // check if cart.html is loaded 
-        const showitems = document.getElementById("fluid-container")
+        // const showitems = document.getElementById("fluid-container")
         console.log(showitems)
     })
 }
@@ -157,7 +170,7 @@ if(collectItems){
 if (localStorage.getItem('cart')) {
     const cartItemsData = JSON.parse(localStorage.getItem('cart'))
     cartItemsData.forEach(item => {
-        addItems(item.id)
+        addItemsFromLS(item)
     })
 }
 
