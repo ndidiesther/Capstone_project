@@ -248,10 +248,70 @@ function removeAddToCart(y) {
     }
 
 }
-
-
-// document.getElementById('text').innerHTML="Go away"
-
+if (item) {
+    item.addEventListener('mouseover', e => {
+        console.log(e.target, e.target.parentElement)
+        let x = +e.target.parentElement.id
+        // console.log("show number is ", +x)
+        showAddToCart(x)
+    
+    })
+    item.addEventListener('mouseout', e => {
+        // console.log(e.target, e.target.parentElement)
+        let x = +e.target.parentElement.id
+        // console.log("show number is ", +x)
+        removeAddToCart(x)
+    
+    })
+}
+if (secItem) {
+    secItem.addEventListener('mouseover', e => {
+        // console.log(e.target, e.target.parentElement)
+        let x = +e.target.parentElement.id
+        // console.log("show number is ", +x)
+        showAddToCart(x)
+    
+    })
+    secItem.addEventListener('mouseout', e => {
+        // console.log(e.target, e.target.parentElement)
+        let x = +e.target.parentElement.id
+        // console.log("show number is ", +x)
+        removeAddToCart(x)
+    
+    })
+}
+if (minItem) {
+    minItem.addEventListener('mouseover', e => {
+        // console.log(e.target, e.target.parentElement)
+        let x = +e.target.parentElement.id
+        // console.log("show number is ", +x)
+        showAddToCart(x)
+    
+    })
+    minItem.addEventListener('mouseout', e => {
+        // console.log(e.target, e.target.parentElement)
+        let x = +e.target.parentElement.id
+        // console.log("show number is ", +x)
+        removeAddToCart(x)
+    
+    })
+}
+if (maxItem) {
+    maxItem.addEventListener('mouseover', e => {
+        // console.log(e.target, e.target.parentElement)
+        let x = +e.target.parentElement.id
+        // console.log("show number is ", +x)
+        showAddToCart(x)
+    
+    })
+    maxItem.addEventListener('mouseout', e => {
+        // console.log(e.target, e.target.parentElement)
+        let x = +e.target.parentElement.id
+        // console.log("show number is ", +x)
+        removeAddToCart(x)
+    
+    })
+}
     
 if (lastItem) {
     lastItem.addEventListener('mouseover', e => {

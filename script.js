@@ -1,5 +1,5 @@
 import {data, data_sec, data_last, data_max, data_min} from './database.js'
-import {lastItem } from './main.js'
+import {item, lastItem, maxItem, minItem, secItem } from './main.js'
 
 const collectItems = document.getElementById("collectItems")
 
@@ -173,6 +173,57 @@ if (localStorage.getItem('cart')) {
         addItemsFromLS(item)
     })
 }
+if(item){
+    item.addEventListener('click', e => {
+        console.log(e.target)
+        if (e.target.id) {
+            console.log("id is ", +e.target.id)
+            addItems(+e.target.id)
+        }
+        // console.log("show number is ", +x)
+    //   addItems()
+    
+    })
+}
+
+if(secItem){
+    secItem.addEventListener('click', e => {
+        console.log(e.target)
+        if (e.target.id) {
+            console.log("id is ", +e.target.id)
+            addItems(+e.target.id)
+        }
+        // console.log("show number is ", +x)
+    //   addItems()
+    
+    })
+}
+
+if(minItem){
+    minItem.addEventListener('click', e => {
+        console.log(e.target)
+        if (e.target.id) {
+            console.log("id is ", +e.target.id)
+            addItems(+e.target.id)
+        }
+        // console.log("show number is ", +x)
+    //   addItems()
+    
+    })
+}
+
+if(maxItem){
+    maxItem.addEventListener('click', e => {
+        console.log(e.target)
+        if (e.target.id) {
+            console.log("id is ", +e.target.id)
+            addItems(+e.target.id)
+        }
+        // console.log("show number is ", +x)
+    //   addItems()
+    
+    })
+}
 
 if(lastItem){
     lastItem.addEventListener('click', e => {
@@ -181,8 +232,7 @@ if(lastItem){
             console.log("id is ", +e.target.id)
             addItems(+e.target.id)
         }
-        // console.log("show number is ", +x)
-    //   addItems()
+  
     
     })
 }
